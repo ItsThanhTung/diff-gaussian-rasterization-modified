@@ -387,6 +387,8 @@ void FORWARD::render(
 	const float* bg_color,
 	float* out_color)
 {
+	printf("sup sup sup");
+	printf("sup sup sup");
 	renderCUDA<NUM_CHANNELS> << <grid, block >> > (
 		ranges,
 		point_list,
